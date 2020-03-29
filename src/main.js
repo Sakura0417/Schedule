@@ -4,8 +4,17 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-Vue.config.productionTip = false
+import './assets/styles/reset.css'
+import './assets/styles/border.css'
+import fastClick from 'fastclick'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import animated from 'animate.css'
 
+Vue.config.productionTip = false
+Vue.use(ElementUI)
+Vue.use(animated)
+fastClick.attach(document.body)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
